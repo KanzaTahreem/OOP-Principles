@@ -11,8 +11,8 @@ second_animal.name
 second_animal.name = 'Fluffy'
 second_animal.name
 
-third_animal = Animal.new("spider", 8, "Wilma")
+third_animal = Animal.new('spider', 8, 'Wilma')
 
-puts first_animal.speak() # Woof, woof
-puts second_animal.speak() 
-puts third_animal.speak() # ...
+puts first_animal.speak # Woof, woof
+puts second_animal.speak
+puts third_animal.speak # ...
