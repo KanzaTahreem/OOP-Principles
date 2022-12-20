@@ -1,4 +1,4 @@
 class Animal
-  def initialize
+  def initialize(name, number_of_legs)
   end
 end
