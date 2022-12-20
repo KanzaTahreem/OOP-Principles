@@ -1,4 +1,4 @@
-require './animal'
+require_relative './animal'
 require_relative './foods'
 
 class Spider < Animal
