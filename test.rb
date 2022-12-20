@@ -24,3 +24,15 @@ puts spider.make_a_web # www
 puts animal.speak # grrrr
 puts dog.speak # Woof, woof
 puts spider.speak # ...
+
+puts animal.number_of_legs # 4
+puts dog.number_of_legs # 4
+puts spider.number_of_legs # *
+
+puts animal.remove_leg() # 3
+puts dog.remove_leg() # 3
+puts spider.remove_leg() # 7
+
+puts animal.number_of_legs # 3
+puts dog.number_of_legs # 3
+puts spider.number_of_legs # 7
