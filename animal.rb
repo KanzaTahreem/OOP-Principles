@@ -22,4 +22,10 @@ class Animal
       "Here is your stick: ---------"
     end
   end
+
+  def make_a_web
+    if @type == "spider"
+      "www"
+    end
+  end
 end
