@@ -1,4 +1,5 @@
 require_relative './remover'
+require_relative './foods.rb'
 
 class Animal
   def initialize(type, number_of_legs, name = 'Unknown')
@@ -6,7 +7,7 @@ class Animal
     @name = name
     @number_of_legs = number_of_legs
     @type = type
-    liked_food = NoFood.new()
+    @liked_food = NoFood.new()
   end
 
   attr_reader :id, :type, :number_of_legs
