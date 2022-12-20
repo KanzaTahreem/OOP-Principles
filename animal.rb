@@ -8,4 +8,12 @@ class Animal
 
   attr_reader :id, :type, :number_of_legs
   attr_accessor :name
+
+  def speak(animal)
+    if animal.type == 'dog'
+      'Woof, woof'
+    elsif animal.type == 'spider'
+      '...'
+    end
+  end
 end
