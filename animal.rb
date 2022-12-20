@@ -10,6 +10,6 @@ class Animal
   attr_accessor :name
 
   def speak
-    "grrrr"
+    'grrrr'
   end
 end
