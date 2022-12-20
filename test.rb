@@ -1,6 +1,6 @@
 require_relative './animal'
-require './dog'
-require './spider'
+require_relative './dog'
+require_relative './spider'
 
 first_animal = Animal.new('dog', 4, 'Rex')
 second_animal = Animal.new('cat', 8)
@@ -24,3 +24,23 @@ puts spider.make_a_web # www
 puts animal.speak # grrrr
 puts dog.speak # Woof, woof
 puts spider.speak # ...
+
+puts animal.number_of_legs # 4
+puts dog.number_of_legs # 4
+puts spider.number_of_legs # 7
+
+puts animal.remove_leg # 3
+puts dog.remove_leg # 3
+puts spider.remove_leg # 7
+
+puts animal.number_of_legs # 3
+puts dog.number_of_legs # 3
+puts spider.number_of_legs # 7
+
+puts animal.likes_food?('meat') # false
+puts dog.likes_food?('meat') # true
+puts spider.likes_food?('meat') # false
+
+puts animal.likes_food?('bug') # false
+puts dog.likes_food?('bug') # false
+puts spider.likes_food?('bug') # true
