@@ -1,5 +1,5 @@
 require_relative './animal'
-require_relative './foods'
+require_relative './Composition/foods'
 
 class Spider < Animal
   def initialize(web_strength_level, name = 'Unknown')
