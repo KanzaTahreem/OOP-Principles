@@ -1,4 +1,4 @@
-require_relative '../animal.rb'
+require_relative '../animal'
 
 class Owner
   attr_reader :animals

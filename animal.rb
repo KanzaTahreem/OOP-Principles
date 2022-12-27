@@ -1,6 +1,6 @@
 require_relative './remover'
 require_relative './foods'
-require_relative './Relationships/owner.rb'
+require_relative './Relationships/owner'
 
 class Animal
   attr_reader :id, :type, :number_of_legs, :owner, :name, :visits
