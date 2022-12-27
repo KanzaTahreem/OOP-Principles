@@ -3,7 +3,7 @@
 
 # 📗 Table of Contents
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 OOP School Library ](#-oop-school-library-)
+- [📖 OOP Principles ](#-oop-school-library-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [🚀 UML Diagram ](#-uml-diagram-)
