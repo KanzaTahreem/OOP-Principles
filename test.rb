@@ -2,6 +2,8 @@ require_relative './animal'
 require_relative './dog'
 require_relative './spider'
 require_relative './Relationships/owner.rb'
+require_relative './Relationships/vet.rb'
+require_relative './Relationships/visit.rb'
 
 
 animal = Animal.new('lion', 4, 'Some name')
@@ -69,3 +71,25 @@ second_animal.owner
 puts alex.animals.count # 4
 alex.animals.last
 puts alex.animals.last.name # Kitty
+
+vet_maria = Vet.new("Maria", "New York")
+vet_john = Vet.new("John", "San Francisco")
+
+visit_1 = Visit.new("2017-12-22", dog, vet_maria)
+visit_2 = Visit.new("2017-12-31", dog, vet_maria)
+
+puts dog.visits.count # 2
+puts dog.visits.map { |visit| visit.date } # 2018-12-22, 2017-12-31
+puts vet_john.visits.count # 0
+puts vet_maria.visits.count # 2
+puts vet_maria.visits.map { |visit| visit.animal.name } # Rex, Rex
+
+visit_3 = Visit.new("2017-11-11", spider, vet_john)
+visit_4 = Visit.new("2017-10-10", spider, vet_maria)
+
+puts spider.visits.count # 2
+puts spider.visits.map { |visit| visit.date } # 2017-11-11, 2017-10-10
+puts vet_john.visits.count # 1
+puts vet_john.visits.map { |visit| visit.animal.name } # Wilma
+puts vet_maria.visits.count # 3
+puts vet_maria.visits.map { |visit| visit.animal.name } # Rex, Rex, Wilma
