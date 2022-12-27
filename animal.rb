@@ -3,7 +3,7 @@ require_relative './foods'
 require_relative './Relationships/owner.rb'
 
 class Animal
-  attr_reader :id, :type, :number_of_legs, :owner, :name
+  attr_reader :id, :type, :number_of_legs, :owner, :name, :visits
 
   def initialize(type, number_of_legs, name = 'Unknown')
     @id = Random.rand(1..1000)
@@ -11,6 +11,7 @@ class Animal
     @number_of_legs = number_of_legs
     @type = type
     @liked_food = NoFood.new
+    @visits = []
   end
 
   def speak
