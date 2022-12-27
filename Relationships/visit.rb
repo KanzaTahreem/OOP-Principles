@@ -8,4 +8,5 @@ class Visit
     animal.visits << self
     @vet = vet
     vet.visits << self
+  end
 end
