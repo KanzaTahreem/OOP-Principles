@@ -1,7 +1,10 @@
 require_relative './remover'
 require_relative './foods'
+require_relative './Relationships/owner.rb'
 
 class Animal
+  attr_reader :id, :type, :number_of_legs, :owner, :name
+
   def initialize(type, number_of_legs, name = 'Unknown')
     @id = Random.rand(1..1000)
     @name = name
@@ -9,9 +12,6 @@ class Animal
     @type = type
     @liked_food = NoFood.new
   end
-
-  attr_reader :id, :type, :number_of_legs
-  attr_accessor :name
 
   def speak
     'grrrr'
@@ -24,5 +24,10 @@ class Animal
 
   def likes_food?(food)
     @liked_food.liked?(food)
+  end
+
+  def owner=(owner)
+    @owner = owner
+    owner.animals.push(self) unless owner.animals.include?(self)
   end
 end
