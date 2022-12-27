@@ -19,7 +19,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 OOP School Library <a name="about-the-project"></a>
+# 📖 OOP Principles <a name="about-the-project"></a>
  This project is dedicated to learn the basics of _four Object Oriented Programming (OOP) Principles_
 
  - Abstraction
