@@ -1,5 +1,5 @@
-require_relative './Composition/remover.rb'
-require_relative './Composition/foods.rb'
+require_relative './Composition/remover'
+require_relative './Composition/foods'
 require_relative './Relationships/owner'
 
 class Animal

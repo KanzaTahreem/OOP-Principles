@@ -1,5 +1,5 @@
 require_relative './animal'
-require_relative './Composition/foods.rb'
+require_relative './Composition/foods'
 
 class Dog < Animal
   def initialize(color, name = 'Unknown')
